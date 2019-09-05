@@ -1,0 +1,6 @@
+- if flash[:alert]
+  = js add_gritter(flash[:alert], title: "Alerta", sticky: false, time: 2200, image: asset_url('fa-exclamation.svg'))
+- elsif flash[:error]
+  = js add_gritter(flash[:error], title: "Error", sticky: false, time: 2200, image: asset_url('fa-error.svg'))
+- else
+  = js add_gritter(flash[:notice], title: "Notificación", sticky: false, time: 1500, image: asset_url('fa-double-check.svg'))
