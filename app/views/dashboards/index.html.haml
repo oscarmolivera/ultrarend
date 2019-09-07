@@ -1,0 +1,5 @@
+= render partial: 'dashboard_empleados' if employee?
+
+= render partial: 'dashboard_admin' if admin?
+
+= link_to 'Cerrar Session', destroy_user_session_path, method: :delete

@@ -1,0 +1,2 @@
+class Empleado < User
+end

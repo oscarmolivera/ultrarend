@@ -1,1 +1,2 @@
 SysAdmin.create(email: "oscarmolivera@gmail.com", first_name:"Admin", last_name:"User", password: "147852", password_confirmation: "147852")
+Empleado.create(email: "testuser@gmail.com", first_name:"Empleado", last_name:"DePrueba", password: "123456", password_confirmation: "123456")
