@@ -18,6 +18,8 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'haml', '~> 5.1', '>= 5.1.2'
 gem "gritter", "1.2.0"
+gem 'administrate', '~> 0.11.0'
+gem 'bourbon', '~> 6.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
