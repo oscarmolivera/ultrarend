@@ -9,7 +9,7 @@
               <div class='homepage-title'>
                 <h1>ULTRARend</h1>
                 <p>
-                  Gestión fácil y sencilla para las solicitudes, aprobaciones y contabilizaciones de fondos a rendir.
+                  <%= t(:little_subtitle) %>
                 </p>
               </div>
             </div>
@@ -19,29 +19,29 @@
           <div class='login-form'>
             <div class='main-div'>
               <div class='panel'>
-                <h2>Iniciar Sesión</h2>
-                <p>Por favor ingrese su correo y su contraseña</p>
+                <h2><%= t(:log_in_title) %></h2>
+                <p><%= t(:log_in_subtitle) %></p>
               </div>
               <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
               <div class="form-group">
-                <%= f.label :email %><br />
-                <%= f.email_field :email, autofocus: true, autocomplete: "Correo ", placeholder: 'Dirección de correo', class: 'form-control' %>
+                <%= f.label t(:email) %><br />
+                <%= f.email_field :email, autofocus: true, autocomplete: t(:email), placeholder: t(:email_placeholder), class: 'form-control' %>
               </div>
               <div class="form-group">
-                <%= f.label :password %><br />
-                <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Constraseña', class: 'form-control' %>
+                <%= f.label t(:password) %><br />
+                <%= f.password_field :password, autocomplete: t(:password), placeholder: t(:password_placeholder), class: 'form-control' %>
               </div>
               <% if devise_mapping.rememberable? %>
               <div class="field">
                 <%= f.check_box :remember_me %>
-                <%= f.label :remember_me %>
+                <%= f.label t(:remember_me) %>
               </div>
               <% end %>
               <div class="actions">
-                <%= f.submit "Log in", class: 'btn btn-dark btn-lg' %>
+                <%= f.submit t(:log_in_btn), class: 'btn btn-dark btn-lg' %>
               </div>
               <% end %>
-             <%= link_to "¿Olvidó su contraseña?", root_path %><br />
+             <%= link_to t(:forgot?), root_path %><br />
             </div>
           </div>  
         </div>

@@ -1,0 +1,11 @@
+es:
+  little_subtitle:  "Gestión fácil y sencilla para las solicitudes, aprobaciones y contabilizaciones de fondos a rendir."
+  log_in_title: "Iniciar Sessión"
+  log_in_subtitle: "Por favor ingrese su correo y su contraseña"
+  email: "Correo:"
+  email_placeholder: "Dirección de correo"
+  password: "Contraseña:"
+  password_placeholder: "Contraseña registrada"
+  remember_me: "Recordar session."
+  log_in_btn: "Ingresar"
+  forgot?: ¿Olvidó su contraseña?

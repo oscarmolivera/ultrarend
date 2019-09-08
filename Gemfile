@@ -21,6 +21,7 @@ gem "gritter", "1.2.0"
 gem "administrate"
 gem 'bourbon', '~> 6.0'
 gem 'pundit', '~> 2.1'
+gem 'http_accept_language'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
