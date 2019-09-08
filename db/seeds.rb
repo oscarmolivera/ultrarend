@@ -1,2 +1,2 @@
-SysAdmin.create(email: "oscarmolivera@gmail.com", first_name:"Admin", last_name:"User", password: "147852", password_confirmation: "147852")
-Empleado.create(email: "testuser@gmail.com", first_name:"Empleado", last_name:"DePrueba", password: "123456", password_confirmation: "123456")
+SysAdmin.create(email: "admin@test.cl", first_name:"Admin", last_name:"User", password: "AUser.123", password_confirmation: "AUser.123")
+Empleado.create(email: "jon.snow@winterfell.ws", first_name:"Jon", last_name:"Snow", password: "Kotn.123", password_confirmation: "Kotn.123")
