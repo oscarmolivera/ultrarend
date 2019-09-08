@@ -1,0 +1,2 @@
+class JefeArea < Empleado
+end

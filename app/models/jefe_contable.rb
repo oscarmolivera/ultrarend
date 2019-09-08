@@ -1,0 +1,2 @@
+class JefeContable < Empleado
+end

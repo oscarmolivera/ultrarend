@@ -1,0 +1,2 @@
+class Trabajador < Empleado
+end

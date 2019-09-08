@@ -1,0 +1,2 @@
+class AuxContable < Empleado
+end
