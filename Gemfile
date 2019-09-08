@@ -18,14 +18,16 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'haml', '~> 5.1', '>= 5.1.2'
 gem "gritter", "1.2.0"
-gem 'administrate', '~> 0.11.0'
+gem "administrate"
 gem 'bourbon', '~> 6.0'
+gem 'pundit', '~> 2.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara', '>= 2.15'
   gem 'database_cleaner'
+  gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
 end
 
 group :development do
