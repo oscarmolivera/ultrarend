@@ -26,6 +26,7 @@ class EmpleadoDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :email,
+    :type,
     :first_name,
     :last_name,
   ].freeze

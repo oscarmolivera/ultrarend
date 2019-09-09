@@ -14,6 +14,8 @@ class TrabajadorDashboard < Administrate::BaseDashboard
     first_name: Field::String,
     last_name: Field::String,
     type: Field::String,
+    departments_id: Field::Number,
+    branch_offices_id: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -28,6 +30,8 @@ class TrabajadorDashboard < Administrate::BaseDashboard
     :email,
     :first_name,
     :last_name,
+    :departments_id,
+    :branch_offices_id,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
