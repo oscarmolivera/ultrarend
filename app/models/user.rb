@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   validates :first_name, presence: true
   validates :last_name, presence: true
+  validates :branch_offices_id, presence: true
+  validates :departments_id, presence: true
 end

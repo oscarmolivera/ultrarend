@@ -9,6 +9,8 @@ FactoryBot.define do
     f.email                 {generate :email}
     f.password              {'asdfasdf'}
     f.password_confirmation {'asdfasdf'}
+    f.branch_offices_id     {1}
+    f.departments_id        {1}
   end
 
   factory :sys_admin, class: 'SysAdmin' do |f|
@@ -17,6 +19,8 @@ FactoryBot.define do
     f.email                 {generate :email}
     f.password              {'asdfasdf'}
     f.password_confirmation {'asdfasdf'}
+    f.branch_offices_id     {1}
+    f.departments_id        {1}
   end
 
   factory :trabajador, class: 'Trabajador' do |f|
@@ -25,5 +29,7 @@ FactoryBot.define do
     f.email                 {generate :email}
     f.password              {'asdfasdf'}
     f.password_confirmation {'asdfasdf'}
+    f.branch_offices_id     {1}
+    f.departments_id        {1}
   end
 end
