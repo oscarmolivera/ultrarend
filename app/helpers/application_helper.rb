@@ -1,6 +1,6 @@
 module ApplicationHelper
-  def employee?
-    true if current_user.type == 'Empleado'
+  def trabajador?
+    true if current_user.type == 'Trabajador'
   end
 
   def admin?

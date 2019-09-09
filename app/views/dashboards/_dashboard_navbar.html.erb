@@ -1,0 +1,7 @@
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+  <a class="navbar-brand" href=<%=dashboards_index_path%>>
+    <%= image_tag(asset_path('favicon.svg'), height: '32', width: '32', class: 'd-inline-block align-top', alt:'LOGO') %>
+    ULTRARend
+  </a>
+  <%= link_to t(:logout), destroy_user_session_path, class: 'logout-text', method: :delete %>
+</nav>
