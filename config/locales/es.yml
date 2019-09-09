@@ -8,4 +8,5 @@ es:
   password_placeholder: "Contraseña registrada"
   remember_me: "Recordar session."
   log_in_btn: "Ingresar"
-  forgot?: ¿Olvidó su contraseña?
+  forgot?: "¿Olvidó su contraseña?"
+  logout: "Cerrar sesión"

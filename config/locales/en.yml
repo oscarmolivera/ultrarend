@@ -8,4 +8,5 @@ en:
   password_placeholder: "Password here"
   remember_me: "Remember me."
   log_in_btn: "Login"
-  forgot?: Forgot your password?
+  forgot?: "Forgot your password?"
+  logout: "Logout"

@@ -18,4 +18,12 @@ FactoryBot.define do
     f.password              {'asdfasdf'}
     f.password_confirmation {'asdfasdf'}
   end
+
+  factory :trabajador, class: 'Trabajador' do |f|
+    f.first_name            {'Usuario'}
+    f.last_name             {'Sistema'}
+    f.email                 {generate :email}
+    f.password              {'asdfasdf'}
+    f.password_confirmation {'asdfasdf'}
+  end
 end
