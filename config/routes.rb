@@ -3,6 +3,13 @@ Rails.application.routes.draw do
       resources :users
       resources :sys_admins
       resources :empleados
+      resources :trabajadors
+      resources :aux_contables
+      resources :jefe_areas
+      resources :jefe_contables
+      resources :companies
+      resources :departments
+      resources :branch_offices
 
       root to: "users#index"
     end
