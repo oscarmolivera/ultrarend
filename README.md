@@ -37,9 +37,18 @@ Cargar con registros de prueba
 rails db:seed
 ```
 ### Paso 3
- Ingresa al sistema con:
- Usuario Admin: admin@test.cl
- contraseña: AUser.123
+ * Ingresa al sistema con:
+    Usuario Admin: admin@test.cl
+    contraseña: AUser.123
 
-Usuario Empleado: jon.snow@winterfell.ws
- contraseña: Kotn.123
+    Usuario Trabajador: sp-i@test.cl
+    contraseña: AUser.123
+
+    Usuario Auxiliar Contable: sp-c@test.cl
+    contraseña: AUser.123
+
+    Usuario Jefe Area: ja@test.cl
+    contraseña: AUser.123
+
+    Usuario Jefe Contable: jc@test.cl
+    contraseña: AUser.123

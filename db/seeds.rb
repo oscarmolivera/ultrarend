@@ -1,8 +1,4 @@
-#SysAdmin.create(email: "admin@test.cl", first_name:"Admin", last_name:"User", password: "AUser.123", password_confirmation: "AUser.123")
-#Empleado.create(email: "jon.snow@winterfell.ws", first_name:"Jon", last_name:"Snow", password: "Kotn.123", password_confirmation: "Kotn.123")
-
-SysAdmin.create(email: "oscarmolivera@gmail.com", first_name:"Oscar", last_name:"Olivera", password: "147852", password_confirmation: "147852")
-puts "Usuario Admin Creado."
+SysAdmin.create(email: "admin@test.cl", first_name:"Admin", last_name:"User", password: "AUser.123", password_confirmation: "AUser.123")
 Company.create(id: 1, name: "Aceros Chile, S.R.L", federal_number: "93.926.000-5")
 puts "Compañia Creada."
 
