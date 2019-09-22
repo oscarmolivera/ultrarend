@@ -10,17 +10,17 @@ enseñanza de Ruby on Rails.
 
 ## Instalacion
 ### Pre Requisitos
-Firefox version 69 o superior
-Ruby version: 2.5.1
-Rails version 5.2.3
-PostgreSQL 10.10 
+* Firefox version 69 o superior
+* Ruby version: 2.5.1
+* Rails version 5.2.3
+* PostgreSQL 10.10 
 
 ### Paso 1
 Clonar el archivo desde el repositorio y descomprimirlo en una carpeta en su computador
 
 Configurar el archivo /config/database.yml para su entorno local
 ### Paso 2 
-Instalar todas las gemas
+* Instalar todas las gemas
 ```console
 bundle install
 ```
