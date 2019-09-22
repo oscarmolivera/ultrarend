@@ -1,6 +1,8 @@
 FactoryBot.define do
-  factory :company do
-    name { "MyString" }
-    federal_number { "MyString" }
+  factory :company do |c|
+    c.id                    {1}
+    c.name                  {'Testing Company'}
+    c.federal_number        {'68.125.887-0'}
   end
+
 end

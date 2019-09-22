@@ -1,0 +1,26 @@
+%li.list-group-item.sidebar-separator.menu-collapsed        
+%a.bg-dark.list-group-item.list-group-item-action.flex-column.align-items-start{"aria-expanded" => "false", "data-toggle" => "collapse", :href => "#submenu1"}
+  .d-flex.w-100.justify-content-start.align-items-center
+    %span.fa.fa-credit-card.fa-fw.mr-3
+    %span.menu-collapsed 
+      =t(:travel_expenses)
+    %span.submenu-icon.ml-auto
+/ Submenu content
+#submenu1.collapse.sidebar-submenu
+  %a.list-group-item.list-group-item-action.bg-dark.text-white{:href => "#"}
+    %span.menu-collapsed 
+      =t(:my_expenses)
+  %a.list-group-item.list-group-item-action.bg-dark.text-white{:href => "#"}
+    %span.menu-collapsed 
+      =t(:new_expense)
+%a.bg-dark.list-group-item.list-group-item-action.flex-column.align-items-start{"aria-expanded" => "false", "data-toggle" => "collapse", :href => "#submenu2"}
+  .d-flex.w-100.justify-content-start.align-items-center
+    %span.fa.fa-print.fa-fw.mr-3
+    %span.menu-collapsed 
+      =t(:reports)
+    %span.submenu-icon.ml-auto
+/ Submenu content
+#submenu2.collapse.sidebar-submenu
+  %a.list-group-item.list-group-item-action.bg-dark.text-white{:href => "#"}
+    %span.menu-collapsed
+      =t(:informs)

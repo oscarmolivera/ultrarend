@@ -3,7 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
-    = favicon_link_tag asset_url('favicon.svg')
+    = favicon_link_tag asset_url('favicon.ico')
     %title Ultrarend
     = csrf_meta_tags
     = csp_meta_tag
@@ -12,4 +12,3 @@
   %body
     = yield
     = render 'shared/alerts'
-

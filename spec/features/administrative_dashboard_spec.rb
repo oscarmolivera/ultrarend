@@ -1,12 +1,18 @@
 require 'rails_helper'
 describe 'admin dashboard' do
-  
+  before do
+    company = FactoryBot.create(:company)
+    branch = FactoryBot.create(:branch_office)
+    department = FactoryBot.create(:department)
+  end
   it 'cannot be reached by a no logon user' do
     visit admin_root_path
     expect(current_path).to eq(new_user_session_path)
   end
 
   it 'cannot be reached by a non admin user' do
+    
+    
     user = FactoryBot.create(:user)
     login_as(user, scope: :user)
     visit admin_root_path

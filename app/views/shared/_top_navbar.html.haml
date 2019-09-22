@@ -1,0 +1,8 @@
+%nav.navbar.navbar-dark.bg-dark.justify-content-between
+  %a.navbar-brand{href: dashboards_index_path}
+    \#{image_tag(asset_path('favicon.ico'), height: '32', width: '32', class: 'd-inline-block align-top', alt:'LOGO')}
+    ULTRARend
+  %span.user-navbar-banner
+    = fa_icon "user"
+    = user_navbar_banner
+    = link_to t(:logout), logout_path, class: 'logout-text'

@@ -1,0 +1,20 @@
+#sidebar-container.sidebar-expanded.d-none.d-md-block
+  %ul.list-group
+    / Separator with title
+    %li.list-group-item.sidebar-separator-title.text-muted.d-flex.align-items-center.menu-collapsed
+      %small MENU
+    %a.bg-dark.list-group-item.list-group-item-action{href: dashboards_index_path}
+      .d-flex.w-100.justify-content-start.align-items-center
+        %span.fa.fa-columns.fa-fw.mr-3
+        %span.menu-collapsed 
+          =t(:dashboard)
+    -if trabajador?
+      = render partial: 'sidebar/options_trabajador'
+    -if auxcontable?
+      = render partial: 'sidebar/options_auxcontable'
+    -if jefearea?
+      = render partial: 'sidebar/options_jefearea'
+    -if jefecontable?
+      = render partial: 'sidebar/options_jefecontable'
+    -if sysadmin?
+      = render partial: 'sidebar/options_sysadmin'

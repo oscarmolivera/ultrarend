@@ -15,8 +15,8 @@ Rails.application.routes.draw do
     end
   get 'dashboards/index'
   devise_for :users, skip: %i[registration]
-  #root 'home#index'
   devise_scope :user do
     root :to => 'devise/sessions#new'
+    get 'logout' => 'devise/sessions#destroy'
   end
 end

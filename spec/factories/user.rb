@@ -32,4 +32,14 @@ FactoryBot.define do
     f.branch_offices_id     {1}
     f.departments_id        {1}
   end
+  
+  factory :auxcontable, class: 'AuxContable' do |a|
+    a.first_name            {'Auxiliar'}
+    a.last_name             {'Contabilidad'}
+    a.email                 {generate :email}
+    a.password              {'asdfasdf'}
+    a.password_confirmation {'asdfasdf'}
+    a.branch_offices_id     {1}
+    a.departments_id        {1}
+  end
 end

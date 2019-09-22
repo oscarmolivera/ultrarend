@@ -1,0 +1,21 @@
+%li.list-group-item.sidebar-separator.menu-collapsed        
+%a.bg-dark.list-group-item.list-group-item-action.flex-column.align-items-start{"aria-expanded" => "false", "data-toggle" => "collapse", :href => "#submenu3"}
+  .d-flex.w-100.justify-content-start.align-items-center
+    %span.fa.fa-inbox.fa-fw.mr-3
+    %span.menu-collapsed
+      =t(:pending)
+    %span.submenu-icon.ml-auto
+/    / Submenu content
+#submenu3.collapse.sidebar-submenu
+  %a.list-group-item.list-group-item-action.bg-dark.text-white{:href => "#"}
+    %span.menu-collapsed
+      =t(:expenses_to_process_lbl)
+  %a.list-group-item.list-group-item-action.bg-dark.text-white{:href => "#"}
+    %span.menu-collapsed
+      =t(:auxcontable_reports_lbl)
+  %a.list-group-item.list-group-item-action.bg-dark.text-white{:href => "#"}
+    %span.menu-collapsed
+      =t(:auxcontable_historicals_lbl)
+
+= render partial: 'sidebar/options_trabajador'
+/ sidebar-container END
