@@ -27,10 +27,16 @@ describe 'users dashboard ' do
     expect(page).to have_content(email)
   end
 
-  it 'has the a Dashboard button on the sidebar' do
+  it 'has a button title for New Expense a user' do
+    login_as(user, scope: :user)
+    visit dashboards_index_path
+    expect(page).to have_content(/New Expense/)
+  end
+
+  it 'has a button title for pending process for AuxContable user' do
     auxc = FactoryBot.create(:auxcontable)
     login_as(auxc, scope: :user)
     visit dashboards_index_path
-    expect(page).to have_content(/Menu/)
+    expect(page).to have_content(/Pending Process/)
   end
 end
