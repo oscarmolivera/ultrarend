@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_08_162811) do
+ActiveRecord::Schema.define(version: 2019_10_08_171839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,23 @@ ActiveRecord::Schema.define(version: 2019_10_08_162811) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["company_id"], name: "index_departments_on_company_id"
+  end
+
+  create_table "expenses", force: :cascade do |t|
+    t.date "expense_date"
+    t.string "provider_utr"
+    t.string "document_type"
+    t.string "document_num"
+    t.string "concept"
+    t.string "observation"
+    t.float "net_cost"
+    t.float "excent_amount"
+    t.float "iva_tax"
+    t.float "other_tax"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "rendicions_id"
+    t.index ["rendicions_id"], name: "index_expenses_on_rendicions_id"
   end
 
   create_table "rendicions", force: :cascade do |t|
@@ -74,8 +91,10 @@ ActiveRecord::Schema.define(version: 2019_10_08_162811) do
     t.index ["departments_id"], name: "index_users_on_departments_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["type", "email"], name: "index_users_on_type_and_email"
   end
 
+  add_foreign_key "expenses", "rendicions", column: "rendicions_id"
   add_foreign_key "rendicions", "users"
   add_foreign_key "users", "branch_offices", column: "branch_offices_id"
   add_foreign_key "users", "departments", column: "departments_id"
