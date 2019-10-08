@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_09_180156) do
+ActiveRecord::Schema.define(version: 2019_10_08_162811) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,23 @@ ActiveRecord::Schema.define(version: 2019_09_09_180156) do
     t.index ["company_id"], name: "index_departments_on_company_id"
   end
 
+  create_table "rendicions", force: :cascade do |t|
+    t.string "glosa_id"
+    t.string "description"
+    t.date "request_date"
+    t.string "status_id"
+    t.date "aproved_date"
+    t.float "request_amount"
+    t.float "approved_amount"
+    t.string "resolution"
+    t.string "observations"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.string "jefe_area_id", limit: 50
+    t.index ["user_id"], name: "index_rendicions_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -59,6 +76,7 @@ ActiveRecord::Schema.define(version: 2019_09_09_180156) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "rendicions", "users"
   add_foreign_key "users", "branch_offices", column: "branch_offices_id"
   add_foreign_key "users", "departments", column: "departments_id"
 end
